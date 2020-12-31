@@ -83,6 +83,7 @@ def chorus13(start, end):
 def chorus135(start, end):
     # reverseLinearAccerlation from 0 to 50000
     # every notecount > 1 set bpm to 0
+    # zip code : FAQAnswersSpreadsheet!D12 only int
     offsets, notecount = Noteoffset(poly_filedir, start, end)
     is_greaterthan1 = list(map(lambda x: int(x > 1), notecount))
     # collect all offsets with > 1
